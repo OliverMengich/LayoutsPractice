@@ -1,0 +1,52 @@
+﻿<Window x:Class="Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+   <StackPanel Orientation="Horizontal">
+       <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+           <Button Content="Airport Ticket" Margin="20" Height="30"/>
+           <Button Content="10 Tickets" Margin="10" x:Name="Btn10Tickets" Height="30"/>
+           <Button Content="Single Fare" Margin="10" Height="30" x:Name="BtnSingleFare"/>
+       </StackPanel>
+       <StackPanel Orientation="Vertical" Margin="30">
+           <StackPanel Orientation="Horizontal">
+               <Button Content="1" Width="30" Margin="5" Height="30"/>
+               <Button Content="2" Width="30" Margin="5" Height="30"/>
+               <Button Content="3" Width="30" Margin="5" Height="30"/>
+               <Button Content="4" Width="30" Margin="5" Height="30"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal">
+               <Button Content="5" Width="30" Margin="5" Height="30"/>
+               <Button Content="6" Width="30" Margin="5" Height="30"/>
+               <Button Content="7" Width="30" Margin="5" Height="30"/>
+               <Button Content="8" Width="30" Margin="5" Height="30"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+               <Button Content="9" Width="30" Margin="5" Height="30"/>
+               <Button Content="0" Width="30" Margin="5" Height="30"/>
+           </StackPanel>
+           <Button  Content="Clear" HorizontalAlignment="Center" Width="70" Margin="5" Height="30"/> 
+       </StackPanel>
+       <StackPanel Orientation="Vertical" Margin="0,30,0,0">
+           
+           <StackPanel Orientation="Horizontal" >
+                   <TextBlock Text="Category Fare: " FontStyle="Italic" FontSize="10"/>
+                   <TextBox Width="100" Margin="0,0,0,0" ></TextBox>
+               </StackPanel>
+               
+               <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                   <TextBlock Text="Quantity:" FontStyle="Italic" FontSize="10"/>
+                   <TextBox Width="100" Margin="23,0,0,0" ></TextBox>
+               </StackPanel>
+               <StackPanel Orientation="Horizontal" Margin="0,5,0,0" >
+                   <TextBlock Text="Total(Ksh):" FontStyle="Italic" FontSize="10"/>
+                   <TextBox Width="100" Margin="20,0,0,0" ></TextBox>
+               </StackPanel>
+           <Button Width="70" Content="Validate" Margin="10" Height="30"/>
+           </StackPanel>
+   </StackPanel>
+</Window>
